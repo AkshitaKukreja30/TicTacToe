@@ -39,7 +39,9 @@ function mark(id) {
  }
 
 
-  
+  function playagain(){
+  	location.reload();
+  }
   
 
 
