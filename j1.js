@@ -10,10 +10,12 @@ function mark(id) {
   }
   if(i%2==0){
   	document.getElementById(id).value="X";
+  	document.getElementById(id).disabled = true;
   	winner="Player X";
     }
   else{
   	document.getElementById(id).value="0";
+  	document.getElementById(id).disabled = true;
    	winner="Player 0";
   	  }
 	console.log("inside"+ id)
@@ -34,12 +36,17 @@ function mark(id) {
 		alert(winner + " won");
 		j=0;
 			}
-	}
-	if(b1.value!="" && b2.value!="" && b3.value!="" && b4.value!="" && b5.value!="" && b6.value!="" && b7.value!="" && b8.value!="" && b9.value!=""){
+		else {
+		if(b1.value!="" && b2.value!="" && b3.value!="" && b4.value!="" && b5.value!="" && b6.value!="" && b7.value!="" && b8.value!="" && b9.value!=""){
 		alert("It's a draw");
 	}
+	}
+
+}
   i++;
  }
+
+
 
 
   function playagain(){
