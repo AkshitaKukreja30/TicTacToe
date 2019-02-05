@@ -35,6 +35,9 @@ function mark(id) {
 		j=0;
 			}
 	}
+	if(b1.value!="" && b2.value!="" && b3.value!="" && b4.value!="" && b5.value!="" && b6.value!="" && b7.value!="" && b8.value!="" && b9.value!=""){
+		alert("It's a draw");
+	}
   i++;
  }
 
