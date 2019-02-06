@@ -33,21 +33,49 @@ border-right:none;
 border-top:none;
 border-left:none;
 }
+.bringtocenter{
+ 	 top: 0;
+  	 right: 0;
+  	 bottom: 0;
+  	 left: 0;
+  	 height: 100px;
+  	 width: 100px; 
+  	 margin: auto;
+  	 position: absolute;
+ }
+}
 </style>
-<div align="center"; overflow:"hidden">
-	<table>
-		<tr><input type = "button" id="b1" value="" class=forbuttons onclick="mark(id);"><b></tr>
-		<tr><input type = "button" id="b2" value="" class=forbuttons onclick="mark(id);"><b></tr>
-		<tr><input type = "button" id="b3" value="" class=forrightmostbuttons onclick="mark(id);"><b></tr>
-		<br/>
-		<tr><input type = "button" id="b4" value="" class=forbuttons onclick="mark(id);"><b></tr>
-		<tr><input type = "button" id="b5" value="" class=forbuttons onclick="mark(id);"><b></tr>
-		<tr><input type = "button" id="b6" value="" class=forrightmostbuttons onclick="mark(id);"><b></tr>
-		<br/>
-		<tr><input type = "button" id="b7" value="" class=forlastbuttons onclick="mark(id);"><b></tr>
-		<tr><input type = "button" id="b8" value="" class=forlastbuttons onclick="mark(id);"><b></tr>
-		<tr><input type = "button" id="b9" value="" style="border-bottom:none" class=forrightmostbuttons onclick="mark(id);"><b></tr>
+<body>
+	<table class=bringtocenter cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+			<td cell><input type = "button" id="b1" value="" class=forbuttons onclick="mark(id);"><b></b></input></td>
+			<td><input type = "button" id="b2" value="" class=forbuttons onclick="mark(id);"><b></b></input></td>
+			<td><input type = "button" id="b3" value="" class=forrightmostbuttons onclick="mark(id);"><b></b></input></td>
+			</tr>
+			<tr>
+			<td><input type = "button" id="b4" value="" class=forbuttons onclick="mark(id);"><b></b></input></td>
+			<td><input type = "button" id="b5" value="" class=forbuttons onclick="mark(id);"><b></b></input></td>
+			<td><input type = "button" id="b6" value="" class=forrightmostbuttons onclick="mark(id);"><b></b></input></td>
+			</tr>
+			<tr>
+			<td><input type = "button" id="b7" value="" class=forlastbuttons onclick="mark(id);"><b></b></input></td>
+			<td><input type = "button" id="b8" value="" class=forlastbuttons onclick="mark(id);"><b></b></input></td>
+			<td><input type = "button" id="b9" value="" style="border-bottom:none" class=forrightmostbuttons onclick="mark(id);"><b></b></input></td>
+			</tr>
+			<tr>
+				<td colspan=3>&nbsp</td>
+			</tr>
+			<tr>
+				<td colspan=3>&nbsp</td>
+			</tr>
+			<tr>
+			<!-- <td>&nbsp</td>	 -->		
+			<td  colspan=3 align="center">
+			<input type= "button" value="Play Again" style="background:black;color:white;width:200px;  height:50px;font-size: xx-large;" onclick="playagain()" align="center">
+	    	</td>
+	    	</tr>
+    	</tbody>
 	</table>
-	<input type= "button" value="Play Again" style="background:black;color:white;width:200px;  height:50px;font-size: xx-large;" onclick="playagain()">
-</div>
+</body>
 </html>
